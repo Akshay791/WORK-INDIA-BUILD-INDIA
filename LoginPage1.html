@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzU0NFcINutpEGMd9_5rQ563tPNLUNJynDebgQydI5NzvGOhv_aA&s");
+	background-size:  cover;
+	font-family : sans-serif;
+}
+.title
+{
+	text-align: center;
+	padding: 50px 0px 20px;
+	
+}
+.title h1
+{
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 36px;
+	
+}
+
+.loginbox{
+	width: 320px ;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px ;
+	margin: 0 auto;
+	border: 1px solid ;
+	box-shadow: 0px 15px 40px rgba(0,0,0,1);
+ 	
+	
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+	
+}
+h1{
+    border:5px solid red;
+	border-radius: 50px 20px;
+	border-top-color: #f4c430;
+	border-left-color: white;
+	border-right-color: white;
+	border-bottom-color: green;
+    font-size:75px;
+	padding:25px;
+	background-size:contain;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	}
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	
+}
+.loginbox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+	
+}
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height:20 px;
+	color: darkgrey;
+	
+}
+.loginbox a:hover{
+	color: #ffc107;
+	}
+h2 {
+ font: bold italic 2em Georgia, Times, "Times New Roman", serif;
+ border-bottom-width: 2px;
+ border-bottom-style: dashed;
+ 
+ border-top-width: 10px;
+ border-top-style: solid;
+ border-top-color: #f4c430;
+	border-left-color: white;
+	border-right-color: white;
+	border-bottom-color: green;
+ margin: 0;
+ padding: 0.5em 0 0.5em 0;
+ font-size: 1em;
+}
+
+</style>
+	<title>Login Page</title>
+	
+</head>
+<body>
+<div class="title"><h1><font color="croceate">WIBI</font><font color="white">||</font>  <font color="saffron">Work India Build India</font></h1>
+<div class="loginbox">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABBVBMVEX///+rvkzwyaVqRiHkt5TSooHUrIzsw5/zzKjwyKNpRB7vxqDwyKSpv0mnu0CpvUdmQBdhOADJo4DUoYNjOwlmQBbqvJmlujphOQDhtJHQnnv0yqpdMgCTfGdgOxDTqYj45tbWxYXF0omZhHH128Py0LH67uS9zHbL1pfmx5j2+Oy/sGj39fR8XT/IvbN3VjXo4962p5rc1M7As6iGYT6/lXOTb030173isoz349Ho7dK4wF3Ow3rc47rX4K/Lp3jk6su6tGLCwWuxw1mLcFjGu7Gmk4OCZUnUy8KunY+ogF6gfFqQakm1kG2Ga1TfvqPiyLPkx7Lk0cfgx5G2x2fDwmzGq3EsjrmSAAAL10lEQVR4nN2ca0PaSBSGuQQIo0CQayyCq7ZaFgWvrVqtLVZbrbvd1vb//5Sd3CCXSTITMmdG3s8t5PGcOe+ZMxMyGf4aHR0c3m3sj/OW9m+3Dw+ORgBfDKHR0eH2uF7vNlsasgHzCLWa9XpvvH08eemYk+ONfL3ZmqF5ZXCOt7++XMjJt/1mVwuhm1PWte0j0Y+aRJPDca8ZQzeD7I2PX1ggR19uu5R4NmRdO3xBjJO7fF1jwLMYm/lvoh+cUkcbvT5L+FyMrQPRD0+ho9teKwmexdi7nYgGiNFkYwE+Q63WsWiGKI3uuovxGWGsb4jGCNdBt7kon6HmeOMeofvbu0PJ2rrRRj1RfQkKaQhLw/1O91Yim/yaXzhBCdK6rW1Jas+3XkoB9As3dXcyxHGjzofPVBN9Fc03uk+lxIQK9QR3O6P7PldArN6dUMB9HjXGp/q2QMJbvinqIIqL4h3PIuNS74sgwAMgQNzOiTHGSdgIJn1p90IIbwGqjKO6iDw96MEB5tFYQHMDl6OG6vB7x8MuJGAe7YMTjkFDiB0Dupx+hXIKR81DYMJb5pHhgoI2jBFIu+YWasESHsPWGUNN2IW4Aej2tuqwRzhMBxPpqAva1ky49DPRfzXYYsplV6GdRJ43tkB3id/SL6UInbYHJxEeBEu4kbobaieDtqK0H8I/WAMd+e+nXGhQ/kkx1T4NnWzBEqJUCVH/TG8rcYiwhGnunJCVoI5CExWUcJSe36P+yamLz9AJ+c8HWmkiCRHDjNjgU3yAykBuQk17VM4ocxjn52nbz4fzlPz/m5Dj/VBCpD2W1BJdEBH6vhbEM6QTP6AJOscIaT76J0U1pz5RmCXS8o8DMh8OInEl1kFPoYiEqP+kqrlcLqa/NP/l+EkP4zMcg/Q3gt1bkIY0KK+rq7mcSnw8b/jOBoTl505T0kfA7g8JMww0LhkBzK1GjqiQhk6iwmeLlKZN0InpdqDUoLxiAkatQqT1xw8x4bPS9DFICDzFOAzsLTQbsBQWQYyXfyiW4vEMrZFyBJQwsD/sr5mAOZWco0jTxg9FVVVLVICKHvyIFuxtIv8eH53ZgI+EPz4O3tmTrpp1lpKQ4BfQ81IfoaZbOerrmhGm6588FUsWHgNhsP2uA99d9CajHUL1sT9Dw2zYNM+eirkZHQMhYSH2gG9Le4upZq7C0vde3xTKj0/OHtbM0BkWmWMnbAeSvQd8vOYrpiXj6ZU1U0VdKZUNNjUXFDXhd99CBC6lmcyRu5iiE7vOOCKgsRL6bbUFfeXEc26hPUQwJSMM7C/Aj54y964scswwTUJ/4wY80894S01fT5+w/eAl7IKf47sPn/rUgAwxXPOkKdoHJ5y4FiLiQah7LBe80GTcno/GPAi90xrYEYal+Qmi05SmS6h4dtJdAe9/fZk5InrkQujeX6C8gAtD8+2F9sSF0N3WaP/AA2Yys4ETL0JXmsL7vaHZGSInQndbA+/3ho6cNNXoWxomQlea9kQAztOUoWljI5ylqaDrpZm7Pl/CeTUVswznOyhuhLOhIvT+fib7rJsboTPLQHlBgM5Gnx+hvYUS0ZRamvAmtHf60GM2l6zelGMMFTNJW+JeYLM6N46E5txUTMtm6x+Ncwx1JM4rTJl9DU9CI4jAF0t9MsY12ik/QkXBO+1/sX78fCOGcIIQt87bCuJp/6xYLA6wisAFZ7S58xrrqddv8iRU2menRUuDf0EBz1dWyuXV1bJaXFsr8iTEKjqIkIm6s+I8c/QUP1XCYhEO8M1KPAwHwsEmGOHr1XgYHjEEW4mJQ7goIVg53QQl1OeAYLVmp7zshO9ACYsCCBMXmkUJwdYhaAx1NyEQYOZcFOFyuoV7Gf6EIsxAxtBNCLe7SLwQ2QmFLEPQvtTthj/gCBOnKTuhCDc0lLSrWYgQdAecNE2ZCd1JCldJDSVsaxYhBJ7TJNxeMBMKqjOGcolW4iKE0LP9ZLWGeeY9B4SdtBlKlKYLEMIfz5wnQWQlFFVILZUT5GlSQvAyYypJOWUkdJK0IAQQeyJ7EBkJ7QAWN8UAZkYghIPiD3FnwOy9Gxuhbpw4/RT6I63nK4zNGxuhuFPDuTZzK2UTskxXWdkIZfiJXcz47nV5ZWUl95qq7jARlkSz+UTVxrEQvj8XjeQTlT0yEcqRpHNRFVam25eiifyickeWm+w7oon8GtHsGBkI3ws3ioBUCm9kyVLRPEHRjG4YCOF3vLGiGYQzvPck3TKkO5GiJ5RwGVIZIsObXaJxCKIxRPq3ZN+JxiEoXULZGhpTKRK+3xQNQ5QaX2ooCd//J5qFLAq7oCPUJfRCUxTFlDKGUi5CQ7nYroaOUFpAimpKQyjdztet2Ek/DaG+KRojSjsxiBSEA0mdwlEMYjzhoFDYFA0RrWjLiCXEgLITRu8w4gj1gvyE0UPFGEITUHbCRbLUAizI7BaZhQhtQNkJo6c1UYQO4LrkhNYGoxTyHk0EoQMoPaGVpIpCRgwnnAHKTjiyHb9ARgwlnAPKTmg336qyTvx5rDBCF6DshM4ecbVQ0OkJ3YCyEzqGr+KHHgSNg0zoAZSdcGaHJeNhA85BJBwUXhLhLGyq+dwlCkIfoOyE882TGUR/SQ0S6gW/1gVdgKKTa45hBbHgLakBQn8ADUJJR4mW3OO2tvXAg9VwwmAApSf09N3OI7eJhLpOiJ/8hJ6xt+I886Bdsn++taRjslC2F0Dova2w6nlw42cRosDmhLJOvA15p94qcZnFS2ZC3/Z3NZ6GJMAXuJjlu3CSMIgSEwam+qVlIwzOaOhqi08D0RyhGgXn3cmCKBokVKRzmUSE0p6uka4JK/E8Aa3LSkg+Al4mQuLNPTVBENeF/rhXuMJOR5eGMOyEO4Hrr4t4iytWo9BbCuyGISdhxLsIzEGUcvsU9bIFexChf3suXm8i73upzK2bdKXmTTn6plCbmVCyHeLOX68iAXMqK2FhfVM01FwXe9NqNQ6R3fXX5bgDPbzaqnWqWay30YRJXF/84Pti77larWVNVT7HBDHBXn/9v5utreuLoRi64fVutlqz8UzEmDxNMLBp/MHfgP+G060rYMrRzV62U3XRWYjReZqgdVtzPrpW7dTgKHHwah0/nUl4GR1EZtdvfKq4Ph5TTrduuFPilVcLBG+G+CESkd31K74vwClbe9674EY3vNqteVZeEPFXJCJjEL0hdFPu8khYHLzgygsq8jIUq+uTAC1KnLB7aSbs8GZrSoMXuxSZWjdyCF2Utd3rVCAtV6CgsxCjlyIL4MdIQAuyimvPYngXJFeIRoxciiyt22UsYdZclZ3EqxLnZpboCjF6G4FI7/qNv2kALcpqJ0GBxXWTITc9mkZUG2rXp8hRHyRTvg6vIkwvVpHVhtowpszfW6tm6fJ1eE1lCwkRKYPYoFqEBMjOc0x9xclZXQzPRPwdjkgVxBijiIGMMJGLraRrz48YvpOiad0YqgwZshYSya0klTME8XKBIC4IaAg75W6wum5V02CzVbkMNQ0AQEO1zrUP8CZNQIyYDdsQx7h+SoBYfsTn1FLUVuVzmcwYDZi8yATU8STqTSe1D3YUEsaos7YGXa9GLTfhbtohNERejeGtW+NjuoBVV54O0w+hoUr2d5Ax1PUbf7KpAuIOck54lW6dmatS+RBYjmTDaBRSXIK2XEHkkqSWKhUcRw8kyfUbjT/T1AGztecZYeqf7Val8vmXJ5CBIDYaH9MPoKFZOb3glaS2KpXpBxzIGeXAz3dZ4QKYre3ZhNecCbMGZPb3r3LOomy76Bof/55y4sOqOR0bv2XoUqVSufz919u35VevGqYKax//fOIVPktOmqbe0ISqUqtkp5eXnz99+nR5OTWg+X5f1UrTId9vIanCnc2SXU0v+Pi9FKoNufq9BKreGIR7YMsQXpZfwJRSMartwpZSERry7tlEq4MJR0tcSnGpuVpus7BKTcpDKMlklJpltsOsudEH2FmIVGe01IafNbcXy2z4WbNv4zikkUHV68yz6GfgK2wX7OetL0rYLkQ/Am9Nl54w+z8UXudMyhZLZQAAAABJRU5ErkJggg==" class="avatar">
+<h2>Login Here</h2>
+<form methode="get" action="/">
+<p>User Name</p>
+<input type="text" name="" placeholder="Enter Regd Id./Ref Id." />
+<p>Password</p>
+<input type="Password" name="" placeholder="********" />
+<input type="submit" name="login" value="login"/>
+<a href="#" >Forgot Password ?</a><br>
+<a href="#">Don't Have an Account ?</a>
+</form>
+</div>
+</div>
+</body>
+</html>
